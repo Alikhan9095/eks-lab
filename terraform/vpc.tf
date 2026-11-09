@@ -1,0 +1,12 @@
+# VPC - Virtual Private Cloud
+resource "aws_vpc" "eks_vpc" {
+  cidr_block           = var.vpc_cidr
+  enable_dns_support   = true
+  enable_dns_hostnames = true
+
+  tags = {
+    Name        = var.vpc_name
+    Environment = "dev"
+    ManagedBy   = "Terraform"
+  }
+}

@@ -1,0 +1,6 @@
+# EKS API access - trusted public IP
+
+eks_public_access_cidrs = [
+    "103.212.147.97/32"
+]
+
